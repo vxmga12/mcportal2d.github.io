@@ -1,0 +1,292 @@
+@import url('https://fonts.cdnfonts.com/css/minecraftia');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    width: 2576px;
+}
+
+#welcome {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    /*padding-top: 20.729166666%;*/
+    
+}
+
+#welcome span{
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-family: 'Minecraftia', sans-serif;
+    margin-bottom: 25px;
+}
+
+#welcome .confirm {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+}
+
+#welcome .confirm button {
+    margin: 0 auto;
+    display: block;
+    background-image: url(../img/button/button.png);
+    width: 280px;
+    height: 58px;
+    border: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Minecraftia', sans-serif;
+    color: #fff;
+}
+
+#welcome .confirm button:hover {
+    margin: 0 auto;
+    display: block;
+    background-image: url(../img/button/button_hover.png);
+    width: 280px;
+    height: 58px;
+    border: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Minecraftia', sans-serif;
+    color: #fff;
+}
+
+#welcome .confirm button:active {
+    margin: 0 auto;
+    display: block;
+    background-image: url(../img/button/button_click.png);
+    width: 280px;
+    height: 58px;
+    border: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Minecraftia', sans-serif;
+    color: #fff;
+}
+
+#wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(64, 1fr);
+    width: 2576px;
+    gap: 0;
+    /*grid-auto-rows: minmax(100px, auto);*/
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(180deg, rgba(117, 180, 255, 1) 0%, rgba(213, 248, 255, 1) 60%);
+}
+
+#wrapper div {
+    box-sizing: border-box;
+    /*border: solid 1px #000;*/
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.cellBlock:hover {
+    filter: brightness(0.5);
+}
+
+/* Background css */
+
+.skyBlock:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.grassBlock {
+    background: url(https://www.filterforge.com/filters/11635.jpg);
+    background-size: contain;
+}
+
+.dirtBlock {
+    background: url(https://www.filterforge.com/filters/11635-v2.jpg);
+    background-size: contain;
+}
+
+/* obsidian item placement css */
+
+.obsidian {
+    background: url(../img/blockTextures/obsidian.png) !important;
+    background-size: contain !important;
+}
+
+/* portal block placement */
+
+.portalBlock {
+    background: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/75/Nether_Portal_%28texture%29_JE2-a1.gif/revision/latest?cb=20200511210852);
+    background-size: contain;
+}
+
+.skyBlock.portalBlock:hover{
+    background: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/75/Nether_Portal_%28texture%29_JE2-a1.gif/revision/latest?cb=20200511210852);;
+    background-size: contain;
+}
+
+.portalBlock:hover {
+    filter: brightness(0.5);
+}
+
+/* Toolbar UI */
+
+#toolbar {
+    display: flex;
+    position: fixed;
+    height: 66px;
+    width: 546px;
+    bottom: 25px;
+    background: #ffffff4f;
+    left: calc((100% - 546px) / 2);
+}
+
+#item1, #item9 {
+    width: 11.538461538461538461538461538462%;
+    height: 100%;
+}
+
+#item1 {
+    background: url(../img/toolbar/item1.png);
+    background-size: cover;
+}
+
+#item9 {
+    background: url(../img/toolbar/item9.png);
+    background-size: cover;
+}
+
+#item2, #item3, #item4, #item5, #item6, #item7, #item8 {
+    width: 10.989010989010989010989010989011%;
+    height: 100%;
+    background: url(../img/toolbar/itemMiddle.png);
+    background-size: cover;
+} 
+
+#item1 .itemSelected {
+    height: 72px;
+    position: absolute;
+    width: 72px;
+    background: url(../img/toolbar/bigSelector.png);
+    background-size: cover;
+    top: -3px;
+    left: -5px;
+    z-index: 2;
+}
+
+#item2 .itemSelected {
+    height: 72px;
+    position: absolute;
+    width: 72px;
+    background: url(../img/toolbar/bigSelector.png);
+    background-size: cover;
+    top: -3px;
+    left: 57px;
+    z-index: 2;
+}
+
+#item3 .itemSelected {
+    height: 72px;
+    position: absolute;
+    width: 72px;
+    background: url(../img/toolbar/bigSelector.png);
+    background-size: cover;
+    top: -3px;
+    left: 117px;
+    z-index: 2;
+}
+
+#item4 .itemSelected {
+    height: 72px;
+    position: absolute;
+    width: 72px;
+    background: url(../img/toolbar/bigSelector.png);
+    background-size: cover;
+    top: -3px;
+    left: 177px;
+    z-index: 2;
+}
+
+#item5 .itemSelected {
+    height: 72px;
+    position: absolute;
+    width: 72px;
+    background: url(../img/toolbar/bigSelector.png);
+    background-size: cover;
+    top: -3px;
+    left: 237px;
+    z-index: 2;
+}
+
+#item6 .itemSelected {
+    height: 72px;
+    position: absolute;
+    width: 72px;
+    background: url(../img/toolbar/bigSelector.png);
+    background-size: cover;
+    top: -3px;
+    left: 297px;
+    z-index: 2;
+}
+
+#item7 .itemSelected {
+    height: 72px;
+    position: absolute;
+    width: 72px;
+    background: url(../img/toolbar/bigSelector.png);
+    background-size: cover;
+    top: -3px;
+    left: 357px;
+    z-index: 2;
+}
+
+#item8 .itemSelected {
+    height: 72px;
+    position: absolute;
+    width: 72px;
+    background: url(../img/toolbar/bigSelector.png);
+    background-size: cover;
+    top: -3px;
+    left: 417px;
+    z-index: 2;
+}
+
+#item9 .itemSelected {
+    height: 72px;
+    position: absolute;
+    width: 72px;
+    background: url(../img/toolbar/bigSelector.png);
+    background-size: cover;
+    top: -3px;
+    left: 477px;
+    z-index: 2;
+}
+
+#item1 img {
+    z-index: 4;
+    position: relative;
+    width: 40px;
+    top: 14px;
+    left: 12px;
+}
+
+#item2 img {
+    z-index: 4;
+    position: relative;
+    width: 40px;
+    top: 14px;
+    left: 10px;
+}
+
+#item3 img {
+    z-index: 4;
+    position: relative;
+    width: 40px;
+    top: 14px;
+    left: 10px;
+}
